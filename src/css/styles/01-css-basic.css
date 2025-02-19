@@ -1,0 +1,8 @@
+/* body 요소에 배경색상 지정 */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: papayawhip;
+  /* color: hsla(180, 50%, 50%, 1); */
+  /* color: rgb(0 0 255 /0.5); */
+  color: rgba(0, 0, 255, 0.6);
+}
