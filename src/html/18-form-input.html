@@ -40,7 +40,59 @@
           <label for="likelionSearch">이메일 </label>
           <input type="email" name="userEmail" id="userEmail" required />
         </div>
+        <div>
+          <label for="userPhone">연락처 </label>
+          <input type="tel" name="userPhone" id="userPhone" required />
+        </div>
+
+        <!-- checkbox -->
+        <div>
+          <input
+            type="checkbox"
+            value="HTML"
+            checked
+            name="classLikelion"
+            id="classHTML"
+          />
+          <label for="classHTML">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="CSS"
+            name="classLikelion"
+            id="classCSS"
+          />
+          <label for="classCSS">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" value="JS" name="classLikelion" id="classJS" />
+          <label for="classJS">JS</label>
+        </div>
+
+        <!-- radio -->
+        <div>
+          <input
+            type="radio"
+            value="classRoom1"
+            checked
+            name="classRoom"
+            id="classRoom1"
+          />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="classRoom2"
+            name="classRoom"
+            id="classRoom2"
+          />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+
         <input type="submit" value="전송" />
+        <button type="submit">전송</button>
       </fieldset>
     </form>
   </body>
