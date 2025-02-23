@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <fieldset>
+        <legend>input 타입</legend>
+        <div>
+          <label for="userName">이름</label>
+          <input type="text" name="" id="userName" />
+        </div>
+        <div>
+          <label for="userPwd">패스워드</label>
+          <input type="password" name="" id="userPwd" />
+        </div>
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" name="" id="userEmail" />
+        </div>
+        <div>
+          <label for="userTel">전화번호</label>
+          <input type="tel" name="" id="userTel" />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="HTML"
+            checked
+            name="classLikelion"
+            id="classHTML"
+          />
+          <label for="classHTML">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="CSS"
+            name="classLikelion"
+            id="classCSS"
+          />
+          <label for="classCSS">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" value="JS" name="classLikelion" id="classJS" />
+          <label for="classJS">JS</label>
+        </div>
+
+        <!-- radio -->
+        <div>
+          <input
+            type="radio"
+            value="classRoom1"
+            checked
+            name="classRoom"
+            id="classRoom1"
+          />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="classRoom2"
+            name="classRoom"
+            id="classRoom2"
+          />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+      </fieldset>
+      <input type="submit" value="input으로 제출" />
+      <button type="submit">button으로 제출</button>
+    </form>
+  </body>
+</html>
