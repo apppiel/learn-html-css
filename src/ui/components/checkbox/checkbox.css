@@ -1,0 +1,78 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/login-theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* 체크박스(배경이미지) */
+.checkbox {
+  --size: 1.5rem;
+
+  display: inline-flex;
+  block-size: var(--size);
+  position: relative;
+  font-size: var(--font-md);
+  /* align-items: center; */
+
+  &:has(.bg-img) input {
+    position: absolute;
+    top: 0;
+    inset-block-start: 0;
+    left: 0;
+    inset-inline-start: 0;
+    margin: 0;
+    inline-size: var(--size);
+    block-size: var(--size);
+    appearance: none;
+  }
+
+  /* input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--blue-900);
+    border-radius: var(--rounded-xs);
+  } */
+
+  label.bg-img {
+    background: url(/src/assets/naver/unchecked.svg) no-repeat;
+    padding-inline-start: 1.875rem;
+    /* text-indent: 2rem; */
+    align-content: center;
+  }
+  input:checked + label {
+    background-image: url(/src/assets/naver/checked.svg);
+  }
+}
+
+/* 체크박스 (svg 요소) */
+
+.checkbox.svg {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.375rem;
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 0;
+    inset-block-start: 0;
+    left: 0;
+    inset-inline-start: 0;
+    margin: 0;
+    inline-size: var(--size);
+    block-size: var(--size);
+    appearance: none;
+  }
+
+  label {
+    display: contents;
+  }
+
+  input:checked + label {
+    .svg--area,
+    .svg--border {
+      fill: var(--green-500);
+    }
+    .svg--mark {
+      fill: var(--white);
+    }
+  }
+}

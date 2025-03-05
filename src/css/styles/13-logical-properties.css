@@ -1,5 +1,5 @@
 .case-01 {
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
   border: 1px solid currentColor;
   color: green;
   width: 200px;
@@ -8,8 +8,8 @@
   /* 세로 크기를 height 속성이 아닌 논리 속성 */
   block-size: 100px;
   overflow: auto;
-  padding-inline-start: 20px;
-  padding-inline-end: 50px;
+  padding-inline-start: 40px;
+  padding-inline-end: 60px;
 
   /* padding-inline: 20px;
   padding-block: 10px;
